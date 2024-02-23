@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuite name="Cucumber" time="37.083" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="Site | Plant tab" name="Plant | Precipitation value should match with the api response value for past 7 days for &quot;&lt;role>&quot; user - Example #1.1" time="36.685">
+<failure type="java.lang.AssertionError" message="expected [0.73] but found [18.8]">
+<![CDATA[java.lang.AssertionError: expected [0.73] but found [18.8]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertEquals(Assert.java:640)
+	at org.testng.Assert.assertEquals(Assert.java:651)
+	at pages.PlantTab.verifyPast7daysPrecipitationValueFromAPI(PlantTab.java:498)
+	at stepDefinitions.Plant.Plant_LoadTime.userIsOnSitePlantTabAndVerifyPastSevenDaysPrecipitationValueForUserfromAPI(Plant_LoadTime.java:107)
+	at ✽.user is on site plant tab and verify past seven days precipitation Value for "member" user from API.(file:///Users/priyankarroy/Documents/Arable-UI-Automation/web-automation/src/test/java/features/PlantPage/PlantPageAttributePercentageChange.feature:157)
+]]>
+</failure>
+<system-out><![CDATA[
+Given assign testcase "C73036" to log data to TestRail......................passed
+Given log into application with a "member" user.............................passed
+When navigate to "Map" page click on the first site name....................passed
+Then user is on site plant tab and verify last seven days Precip Value for "member" user..passed
+Then user is on site plant tab and verify past seven days precipitation Value for "member" user from API..failed
+]]></system-out>
+</testcase>
+</testsuite>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO">
+    <Appenders>
+        # Console appender
+        <Console name="stdout" target="SYSTEM_OUT">
+            <ThresholdFilter level="INFO" onMatch="ACCEPT" onMismatch="DENY"/>
+            # Pattern of log message for console appender
+            <PatternLayout pattern="%d{yyyy-MM-dd_HH:mm:ss} %-5p %c{1}:%L - %m%n"/>
+        </Console>
+
+        # File appender
+        <RollingFile name="fileout"
+                     fileName="target/test-logs/testRun.log"
+                     filePattern="target/test-logs/testRun_%d{MM-dd-yyyy-HH-mm}.log"
+                     ignoreExceptions="false" append="true">
+            <ThresholdFilter level="INFO" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout>
+                <Pattern>%d{yyyy-MM-dd_HH:mm:ss} %-5p %c:%L - %m%n</Pattern>
+            </PatternLayout>
+            <TimeBasedTriggeringPolicy/>
+        </RollingFile>
+
+    </Appenders>
+    <Loggers>
+        <Root level="INFO">
+            <AppenderRef ref="stdout"/>
+            <AppenderRef ref="fileout"/>
+        </Root>
+    </Loggers>
+</Configuration>

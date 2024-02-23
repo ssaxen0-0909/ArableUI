@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuite name="Cucumber" time="27.874" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Export Page" name="Export test | Capture page load time for export page with multiple &quot;&lt;role>&quot; user - Example #1.1" time="27.467">
+<system-out><![CDATA[
+Given assign testcase "C68249" to log data to TestRail......................passed
+Given log into application with a "member" user.............................passed
+When navigate to page "Export" and verify export dropdown is displayed......passed
+When navigate to page "Export"..............................................passed
+]]></system-out>
+</testcase>
+</testsuite>
