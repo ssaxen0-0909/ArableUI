@@ -18,7 +18,7 @@ public class ResponseTimeUtil {
 
     public static void DataDogAPM() throws IOException {
         // Replace with your DataDog API key
-        String apiKey = "7a2f554bda9a40e46513f21b723f7195";
+        String apiKey = "REMOVING THE DATADOG KEY WHICH IS HARDCODED. PLEASE FIND A WAY TO USE IT VIA SECRETS";
         // Replace with your DataDog Application key
         String applicationKey = "b532beb6c9df66d2410e24ea2b6a70c68d79d700";
         String serviceName = "api-user";
